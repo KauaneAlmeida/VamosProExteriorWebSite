@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Pro Exterior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <!-- Canvas para o fundo de estrelas -->
+        <canvas id="universe"></canvas>
+        
+        <nav class="nav__bar">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">Vamos Pro Exterior</a>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#Login">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="home" class="header-content reveal">
+            <div class="header-image-bottom">
+                <img src="glow-bottom.svg" alt="glow shadow">
+            </div>
+            <div class="header-image-logo">
+                <img src="Logo.png" alt="Logo com chapéu de formatura sobre o globo">
+            </div>
+            <h1>Transforme seu sonho de estudar fora <br> em realidade com o<br>Vamos Pro Exterior!</h1> 
+            <p>Conte com uma equipe especializada e que conquista aprovações há mais <br> de cinco anos para te auxiliar no processo de application.
+                <br>Com o apoio de materiais personalizados, consultorias e mentorias, <br>te guiaremos em cada passo para conquistar seu futuro internacional.</p>
+        </div>
+    </header>
+    <main>
+    </section>
+    
+    
+    <section id="servicos" class="parcerias reveal">
+        <p>O Vamos Pro Exterior é uma consultoria que visa auxiliar estudantes e
+        desmistificar<br>o processo de application para universidades de excelência ao redor do mundo.
+        </p>
+        <div class="header-image-top">
+        </div>
+    </section>
+   
+
+<body>
+    <div class="services reveal">
+        <div class="project__card reveal">
+            <h2>Acompanhamento Individual</h2>
+            <p>Nos reunimos em conversas individuais para discutir planos de carreira, montar a lista de faculdades, procurar por bolsas de estudo e organizar o processo de application. Contamos com consultorias independentes e um programa de mentoria para os interessados em um suporte integral.
+            </p>
+            <button>
+                Saiba Mais <span class="arrow"></span>
+            </button>
+        </div>
+    
+        <div class="project__card reveal">
+            <h2>Pagamento Flexível</h2>
+            <p>Pague somente pelo que você usa - e quando usar! Adotamos o modelo de pagamento sob demanda, com baixo custo inicial e sem contratos de longo prazo, garantindo sua autonomia em relação aos gastos. Na mentoria, oferecemos opções de parcelamento adaptadas à sua realidade financeira.
+            </p>
+            <button>
+                Saiba Mais <span class="arrow"></span>
+            </button>
+        </div>
+    
+        <div class="project__card reveal">
+            <h2>Mentores Experientes</h2>
+            <p>Conte com mentores experientes em Humanas, Exatas e Ciências Sociais. Temos aprovações e bolsas de estudo nos EUA e Europa, e mais de cinco anos de experiência em applications. Tornamos o processo mais leve e frutífero!</p>
+            <button>
+                Saiba Mais <span class="arrow"></span>
+            </button>
+        </div>
+    </div>
+    
+<hr>
+
+<section id="sobre" class="intro">
+    <div class="intro-content reveal">
+        <div class="header-image-students">   
+            <img src="students.png" alt="estudantes">
+        </div>
+        <div class="text-content reveal">
+            <h1>Consultoria e Mentoria</h1>
+            <h2>Conheça nossos planos de atendimento e agende uma chamada de alinhamento!</h2>
+            <ul>
+                <li>Consultoria Ampla</li>
+                <li>Consultoria de CV e Carta de Motivação</li>
+                <li>Mentoria Vamos Pro Exterior</li>
+            </ul>
+            <div class="buttons reveal">
+                <button>Entre em contato</button>
+                <button>Conheça nosso trabalho</button>
+            </div>
+        </div>
+    </div>
+    <div class="flight-path">
+        <img src="airplane.png" alt="Avião" class="airplane">
+    </div>
+</section>
+
+
+
+  <footer>
+    <div class="header-image-top">
+        <img src="glow-top.svg" alt="glow shadow">
+      </div>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="footer-logo reveal">
+            <img src="Logo-footer.png" alt="Logo Vamos Pro Exterior">
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="footer-contact reveal">
+            <h4>Informações de Contato</h4>
+            <p>Endereço: Rua Exemplo, 123 - Diadema, São Paulo</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@vamosproexterior.com</p>
+        </div>
+
+        <div class="footer-social reveal">
+            <h4>Siga-nos</h4>
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/vamosproexterior" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@vamosproexterior" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                <li><a href="https://www.linkedin.com/company/vamosproexterior" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+        
+
+    <!-- Copyright -->
+    <div class="footer-copyright reveal">
+        <p>© 2025 Vamos Pro Exterior. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".reveal");
+    
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target); // Para evitar que execute novamente
+                }
+            });
+        },
+        { threshold: 0.5 } // Define que o efeito é ativado quando 50% do elemento estiver visível
+    );
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+    </script>
+    
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="stars.js"></script>
+    
+
+
+
+
+
+
+</body>
+</html>
+
