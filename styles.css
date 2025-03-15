@@ -353,8 +353,8 @@ header p {
     }
 }
 hr {
-    margin-top: 80px; /* Adiciona espaço acima do hr */
-    margin-bottom: 20px; /* Ajuste conforme necessário */
+    margin-top: 80px;
+    margin-bottom: 20px; 
 }
 .text-content {
     flex: 1; 
@@ -616,6 +616,46 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f172a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+
+#preloader .logo {
+    width: 800px; /* Tamanho da logo */
+    animation: moveUpDown 2s infinite alternate; /* Animação de subir e descer */
+    height: auto;
+}
+
+/* Animação de subir e descer */
+@keyframes moveUpDown {
+    0% { transform: translateY(0); } /* Começa na posição normal */
+    50% { transform: translateY(-30px); } /* Move para cima */
+    100% { transform: translateY(0); } /* Volta para a posição normal */
+}
+#content {
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
         main {
