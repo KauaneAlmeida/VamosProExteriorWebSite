@@ -1,16 +1,3 @@
-// Código para a animação de fundo (se já tiver no seu stars.js)
-document.addEventListener("DOMContentLoaded", function () {
-    // Função para esconder o preloader após um delay de tempo
-    window.onload = function() {
-        // Define o tempo em milissegundos (3 segundos = 3000)
-        setTimeout(function() {
-            document.getElementById('preloader').style.display = 'none'; // Esconde o preloader
-            document.getElementById('content').style.display = 'block'; // Mostra o conteúdo da página
-        }, 2000); // Altere 3000 para o tempo que desejar em milissegundos
-    };
-});
-
-
 // Configuração básica do Three.js
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
